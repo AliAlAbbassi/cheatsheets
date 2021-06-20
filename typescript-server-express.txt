@@ -1,0 +1,28 @@
+npm init -y
+yarn add -D @types/node typescript
+npx tsconfig.json
+
+yarn add ts-node nodemon 
+add the following scripts to package.json
+    "gen-env": "gen-env-types .env -o src/env.d.ts     -e .",
+    "build": "tsc",
+    "watch": "tsc -w",
+    "dev": "nodemon dist/index.js",
+    "start": "node dist/index.js",
+    "start2": "ts-node src/index.ts",
+    "dev2": "nodemon --exec ts-node src/index.ts"
+
+essentials:
+yarn add express express-session graphql type-graphql dotenv-safe cors @types/express @types/express-session @types/cors 
+
+cool:
+yarn add apollo-server-express argon2 connect-redis cors ioredis reflect-metadata typeorm uuid @types/connect-redis @types/ioredis @types/redis @types/uuid gen-env-types
+
+essential and cool:
+yarn add express express-session graphql type-graphql dotenv-safe apollo-server-express argon2 connect-redis cors ioredis reflect-metadata typeorm uuid @types/express @types/express-session @types/cors @types/ioredis @types/redis @types/uuid gen-env-types
+
+ 
+
+
+
+
